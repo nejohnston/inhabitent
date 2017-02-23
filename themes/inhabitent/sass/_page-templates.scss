@@ -2,4 +2,62 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+.container {
+    margin: auto;
+    width: 1120px;
+}
+
+/* Header */
+
+.site-header {
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.site-header h1 {
+    display: flex;
+    background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px;
+    height: 33px;
+    margin: 0;
+    width: 50px;
+    overflow: hidden;
+    text-indent: 100%;
+}
+
+/* Footer */
+
+.site-footer {
+    background: url(../../images/dark-wood@2x.png);
+    background-size: 512px, 512px;
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-block-item {
+    margin: 3rem 0rem;
+    padding-right: 1.5rem;
+    width: 25%;
+    color: #fff;
+}
+.footer-block-item {
+    margin: 3rem 0rem;
+    width: 50%;
+}
+.text-logo {
+    text-align: right;
+    margin-top: 1rem;
+}
+.footer-header {
+    color: #d99054;
+}
+
+a.footer-link {
+    color: #fff;
+}

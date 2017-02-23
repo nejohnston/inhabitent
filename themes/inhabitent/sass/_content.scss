@@ -2,8 +2,49 @@
 # Content
 --------------------------------------------------------------*/
 
-/* Posts and pages */
+/* Front-page posts */
 
+.thumbnail-wrapper {
+	max-width: 32vh;
+}
+.news-feed {
+
+}
+
+/* Posts and pages */
+body.blog{
+.content-area {
+	width: 70%;
+	padding: 5% 5% 0 0;
+	border-right: 1px solid #e1e1e1;
+}
+
+.entry-header {
+	position: relative;
+}
+
+.entry-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $color__link;
+	width: 75%;
+	font-size: 2rem;
+	padding: 0.8rem 1.5rem;
+}
+
+.entry-title a {
+	color: #fff;
+}
+
+.entry-meta {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: $color__link;
+	color: #fff;
+}
+}
 .sticky {
 	display: block;
 }
@@ -32,6 +73,12 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.site-content {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -46,4 +93,17 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+/* Shop */
+
+.all-products {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-between;
+
+	.shop-product {
+		width: 25%;
+	}
 }
