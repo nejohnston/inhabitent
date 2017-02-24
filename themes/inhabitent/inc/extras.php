@@ -80,3 +80,13 @@ if (!is_page_template('page-templates/about.php')) {
 }
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
+
+add_action ('pre_get_posts', 'organize');
+
+function organize ( $query ) {
+	if ( $query->is_main_query() && is_post_type_archive('products')){
+		$query->set('orderby', 'title');
+		$query->set('order', 'ASC');
+		$query->set('posts_per_page', '20');
+	}
+};

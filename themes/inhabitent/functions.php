@@ -88,11 +88,46 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	// wp_enqueue_script( 'jquery' );
+	// wp_enqueue_script( 'red_comments', get_template_directory_uri().'/js/api.js', array('jquery'), false, true);
+
+	// wp_localize_script( 'red_comments', 'red_vars', array(
+	// 	'rest_url' => rest_url(),
+	// 	'wp_api_nonce' => admin_url( 'wp_rest' ),
+	// 	'post_id' => get_the_ID(),
+	// ));
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+
+// function red_comment_ajax() {
+
+// 	check_ajax_referer( 'red_comment_status', 'security' );
+
+// 	if ( ! current_user_can( 'edit_posts' ) ) {
+// 		exit;
+// 	}
+
+// 	$id = $_POST['the_post_id'];
+
+// 	if ( isset( $id ) && is_numeric( $id ) ) {
+// 		$the_post = array(
+
+// 			'ID' => $id,
+// 			'comment_status' => 'closed'
+
+// 		);
+
+// 		wp_update_post( $the_post );
+// 	}
+
+// 	exit;
+
+// }
+// add_action( 'wp_ajax_red_comment_ajax', 'red_comment_ajax');
 
 /**
  * Custom template tags for this theme.

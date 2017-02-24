@@ -3,16 +3,21 @@
 --------------------------------------------------------------*/
 
 /* Front-page posts */
-
+.home {
 .thumbnail-wrapper {
 	max-width: 32vh;
 }
-.news-feed {
-
+.product-type-wrapper {
+	display: flex;
+	flex: 0 1 23%;
+	max-width: 23%;
+	flex-direction: column;
+	border: 1px solid #e1e1e1;
+}
 }
 
 /* Posts and pages */
-body.blog{
+.blog{
 .content-area {
 	width: 70%;
 	padding: 5% 5% 0 0;
@@ -44,6 +49,11 @@ body.blog{
 	background-color: $color__link;
 	color: #fff;
 }
+.site-content {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+}
 }
 .sticky {
 	display: block;
@@ -73,11 +83,6 @@ body.blog{
 	margin: 0 0 $base__space-unit;
 }
 
-.site-content {
-	display: flex;
-	flex: 1 0 auto;
-	flex-direction: column;
-}
 
 /* Asides */
 
@@ -97,13 +102,16 @@ body.blog{
 
 /* Shop */
 
-.all-products {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	justify-content: space-between;
+.archive {
+
+	.all-products {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-between;
 
 	.shop-product {
 		width: 25%;
 	}
+}
 }
