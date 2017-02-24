@@ -1,109 +1,179 @@
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
+		/*--------------------------------------------------------------
+		# Content
+		--------------------------------------------------------------*/
 
-/* Front-page posts */
+		/* Front-page posts */
 
-.thumbnail-wrapper {
-	max-width: 32vh;
-}
-.news-feed {
+		.home {
+			.home-hero-logo {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+			}
+			.product-info {
+				margin-bottom: 4.5rem;
+			}
+		.shop-stuff-container {
+			display: flex;
+			justify-content: space-between;
+		}
+		.product-type-wrapper {
+			flex: 0 1 23.5%;
+			width: 23.5%;
+			border: 1px solid #e1e1e1;
+			text-align: center;
+			padding: .75rem;
+			border-top-width: 5px;
 
-}
+			p {
+			font-size: 1.1rem;
+			line-height: 1.5rem;
+			}
 
-/* Posts and pages */
-body.blog{
-.content-area {
-	width: 70%;
-	padding: 5% 5% 0 0;
-	border-right: 1px solid #e1e1e1;
-}
+			img {
+				width: 70px;
+				height: 70px;
+			}
+		}
+		.new-posts {
+			margin-bottom: 4.5rem;
 
-.entry-header {
-	position: relative;
-}
+		.wp-thumbnail-wrapper img{
+			flex-direction: row;
+			background-color: #e1e1e1;
+			height: 250px;
+		}
+		ul {
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			padding: 0;
+		}
+		.new-posts-wrapper li {
+			list-style: none;
+			max-width: 250px;
+			margin: 0;
+			flex: 0 1 33%;
+			flex-flow: row nowrap;
 
-.entry-title {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: $color__link;
-	width: 75%;
-	font-size: 2rem;
-	padding: 0.8rem 1.5rem;
-}
 
-.entry-title a {
-	color: #fff;
-}
+			.post-info-wrapper {
+				justify-content: space-between;
+				flex-direction: column;
+				padding: 0.75rem;
+				border: 1px solid #e1e1e1;
+			}
+		}
+		}
+			h2 {
+				font-size: 2.4rem;
+				font-weight: 400;
+				text-align: center;
+				text-transform: uppercase;
+				margin-bottom: 3.75rem;
+			}
+			h3 {
+				font-size: 1.3rem;
+				margin-bottom: 3.75rem;
+			}
 
-.entry-meta {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	background-color: $color__link;
-	color: #fff;
-}
-}
-.sticky {
-	display: block;
-}
+		.news-feed {
 
-.hentry {
-	margin: 0 0 $base__space-unit;
-}
+		}
+		}
+		/* Posts and pages */
+		.blog{
+		.content-area {
+			width: 70%;
+			padding: 5% 5% 0 0;
+			border-right: 1px solid #e1e1e1;
+		}
 
-.updated:not(.published){
-	display: none;
-}
+		.entry-header {
+			position: relative;
+		}
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
+		.entry-title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $color__link;
+			width: 75%;
+			font-size: 2rem;
+			padding: 0.8rem 1.5rem;
+		}
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
+		.entry-title a {
+			color: #fff;
+		}
 
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
+		.entry-meta {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background-color: $color__link;
+			color: #fff;
+		}
+		}
+		.sticky {
+			display: block;
+		}
 
-.site-content {
-	display: flex;
-	flex: 1 0 auto;
-	flex-direction: column;
-}
+		.hentry {
+			margin: 0 0 $base__space-unit;
+		}
 
-/* Asides */
+		.updated:not(.published){
+			display: none;
+		}
 
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
+		.single .byline,
+		.group-blog .byline {
+			display: inline;
+		}
 
-/* Comments */
+		.page-content,
+		.entry-content,
+		.entry-summary {
+			margin: $base__space-unit 0 0;
+		}
 
-.comment-content a {
-	word-wrap: break-word;
-}
-.bypostauthor {
-	display: block;
-}
+		.page-links {
+			clear: both;
+			margin: 0 0 $base__space-unit;
+		}
 
-/* Shop */
+		.site-content {
+			display: flex;
+			flex: 1 0 auto;
+			flex-direction: column;
+		}
 
-.all-products {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	justify-content: space-between;
+		/* Asides */
 
-	.shop-product {
-		width: 25%;
-	}
-}
+		.blog .format-aside .entry-title,
+		.archive .format-aside .entry-title {
+			display: none;
+		}
+
+		/* Comments */
+
+		.comment-content a {
+			word-wrap: break-word;
+		}
+		.bypostauthor {
+			display: block;
+		}
+
+		/* Shop */
+
+		.all-products {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			justify-content: space-between;
+
+			.shop-product {
+				width: 25%;
+			}
+		}
