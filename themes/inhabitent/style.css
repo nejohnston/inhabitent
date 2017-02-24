@@ -616,6 +616,15 @@ a {
 		# Content
 		--------------------------------------------------------------*/
 /* Front-page posts */
+.home .home-hero {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 3.75rem; }
+
 .home .home-hero-logo {
   display: -ms-flexbox;
   display: flex;
@@ -649,7 +658,8 @@ a {
     height: 70px; }
 
 .home .new-posts {
-  margin-bottom: 4.5rem; }
+  margin-bottom: 4.5rem;
+  margin: 2rem; }
   .home .new-posts .wp-thumbnail-wrapper img {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -660,8 +670,14 @@ a {
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0; }
   .home .new-posts .new-posts-wrapper li {
     list-style: none;
     max-width: 250px;
@@ -670,13 +686,13 @@ a {
         flex: 0 1 33%;
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap; }
-    .home .new-posts .new-posts-wrapper li .post-info-wrapper {
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      padding: 0.75rem;
-      border: 1px solid #e1e1e1; }
+  .home .new-posts .post-info-wrapper {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 0.75rem;
+    border: 1px solid #e1e1e1; }
 
 .home h2 {
   font-size: 2.4rem;
@@ -760,7 +776,16 @@ a {
   display: block; }
 
 /* Shop */
-.all-products {
+.archive .product-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: row;
+      justify-content: row;
+  list-style: none; }
+
+.archive .all-products {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -768,8 +793,22 @@ a {
   list-style: none;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .all-products .shop-product {
+  .archive .all-products .shop-product {
     width: 25%; }
+
+/* Find Us */
+.page-template-default .site-header {
+  margin-bottom: 2rem; }
+
+.page-template-default label {
+  font-family: 'Novecento Web', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+  color: #2f1339;
+  font-size: 1.1rem; }
+
+.page-template-default .required {
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Media
@@ -852,16 +891,26 @@ object {
   width: 1120px; }
 
 /* Header */
+.main-navigation {
+  font-family: 'Novecento Web', sans-serif;
+  text-transform: uppercase; }
+  .main-navigation li {
+    padding-left: 2rem; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   padding: .5rem 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999999; }
+  .site-header .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
 
 .site-header h1 {
   display: -ms-flexbox;

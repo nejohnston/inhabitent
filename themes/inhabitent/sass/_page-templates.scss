@@ -8,15 +8,26 @@
 }
 
 /* Header */
-
+.main-navigation {
+    font-family: 'Novecento Web', sans-serif;
+    text-transform: uppercase;
+    li {
+        padding-left: 2rem;
+    }
+}
 .site-header {
     background-color: hsla(0,0%,100%,.85);
     border-bottom: 1px solid #e1e1e1;
     padding: .5rem 0;
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 9999999;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 .site-header h1 {
     display: flex;
@@ -28,6 +39,7 @@
     overflow: hidden;
     text-indent: 100%;
 }
+
 
 /* Footer */
 

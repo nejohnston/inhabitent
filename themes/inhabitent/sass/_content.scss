@@ -5,6 +5,12 @@
 		/* Front-page posts */
 
 		.home {
+			.home-hero {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 3.75rem;
+			}
 			.home-hero-logo {
 				display: flex;
 				justify-content: center;
@@ -37,6 +43,7 @@
 		}
 		.new-posts {
 			margin-bottom: 4.5rem;
+			margin: 2rem;
 
 		.wp-thumbnail-wrapper img{
 			flex-direction: row;
@@ -46,8 +53,14 @@
 		ul {
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 			margin: 0;
 			padding: 0;
+			list-style: none;
+			margin-bottom: 0;
+			margin-left: 0;
+			padding-left: 0;
+
 		}
 		.new-posts-wrapper li {
 			list-style: none;
@@ -55,7 +68,7 @@
 			margin: 0;
 			flex: 0 1 33%;
 			flex-flow: row nowrap;
-
+		}
 
 			.post-info-wrapper {
 				justify-content: space-between;
@@ -63,7 +76,7 @@
 				padding: 0.75rem;
 				border: 1px solid #e1e1e1;
 			}
-		}
+
 		}
 			h2 {
 				font-size: 2.4rem;
@@ -166,7 +179,13 @@
 		}
 
 		/* Shop */
-
+.archive {
+	.product-title {
+		display: flex;
+		flex-direction: column;
+		justify-content: row;
+		list-style: none;
+	}
 		.all-products {
 			display: flex;
 			flex-wrap: wrap;
@@ -177,3 +196,21 @@
 				width: 25%;
 			}
 		}
+	}
+
+	/* Find Us */
+ .page-template-default {
+	 .site-header {
+		 margin-bottom: 2rem;
+	 }
+	 label {
+		 font-family: 'Novecento Web', sans-serif;
+		 text-transform: uppercase;
+		 margin-bottom: .8rem;
+		 color: #2f1339;
+		 font-size: 1.1rem;
+	 }
+	 .required {
+		 color: #d99054;
+	 }
+ }
