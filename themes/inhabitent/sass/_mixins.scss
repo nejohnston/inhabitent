@@ -16,10 +16,8 @@
 	justify-content: center;
 }
 
-@mixin btn {
-	background: #248a83;
+@mixin button {
 	border: none;
-	color: #fff;
 	font-family: 'Novecento Web', sans-serif;
 	font-size: .9rem;
 	padding: .75rem 1.5rem;
