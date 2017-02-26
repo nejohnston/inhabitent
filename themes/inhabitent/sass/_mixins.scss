@@ -17,10 +17,11 @@
 }
 
 @mixin button {
-	border: none;
+	color: $color__purple;
+	border: 1px solid $color__purple;
 	font-family: 'Novecento Web', sans-serif;
 	font-size: .9rem;
 	padding: .75rem 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
-}
+	}

@@ -111,6 +111,7 @@
 		}
 		}
 /* Posts and pages */
+
 		.blog{
 		.site-content {
 			padding-top: 3rem;
@@ -130,6 +131,9 @@
 
 		.entry-header {
 			position: relative;
+		}
+		.black-button {
+			@include button;
 		}
 
 		.entry-title {
@@ -152,6 +156,7 @@
 			right: 0;
 			background-color: $color__link;
 			color: #fff;
+			padding: 0 1.5rem;
 		}
 
 		.sticky {
@@ -267,6 +272,7 @@
 					padding: 0.75rem;
 				.product-title {
 					display: inline;
+					content: '.......................';
 				}
 				.product-price {
 					display: inline;
@@ -306,13 +312,11 @@
 		.black-button {
 			@include button;
 			background: #fff;
-			color: #2f1339;
-			border: 1px solid #2f1339;
 			border-radius: 0;
-		}
-		.black-button:hover {
+		:hover {
 			background: #248a83;
 			color: #fff;
+		}
 		}
 	}
 }
@@ -357,9 +361,9 @@
 
 /* Find Us */
 .page-template-default {
-
 	.entry-title {
 		margin-top: 0;
+		margin-bottom: 2rem;
 	}
 	.entry-content {
 		p {
@@ -379,8 +383,8 @@
 
 	.content-area {
 			display: flex;
-			width: 70%;
-			padding: 5% 5% 0 0;
+			width: 73%;
+			padding: 6rem 5% 0 0;
 			border-right: 1px solid #e1e1e1;
 			margin: 0;
 		}

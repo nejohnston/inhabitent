@@ -10,6 +10,7 @@
 
 /* Header */
 .main-navigation {
+    display: flex;
     font-family: 'Novecento Web', sans-serif;
     text-transform: uppercase;
     li {
@@ -38,6 +39,20 @@
     width: 50px;
     overflow: hidden;
     text-indent: 100%;
+}
+fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+    .search-field {
+        width: 0;
+        border: none;
+    }
+    .search-submit {
+        background: #fff;
+        color: $color__link;
+        border: none;
+    }
 }
 
 

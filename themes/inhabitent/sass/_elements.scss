@@ -15,6 +15,8 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	line-height: 1.75rem;
+	font-family: 'Merriweather Web', sans-serif;
 }
 
 blockquote, q {
@@ -61,7 +63,7 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	width: 100%; /* Adhere to container width. */
+	max-width: 100%; /* Adhere to container width. */
 }
 
 table {

@@ -347,7 +347,9 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  line-height: 1.75rem;
+  font-family: 'Merriweather Web', sans-serif; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -383,7 +385,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  width: 100%;
+  max-width: 100%;
   /* Adhere to container width. */ }
 
 table {
@@ -604,15 +606,25 @@ a {
 
 /* Sidebar */
 .widget-area {
-  padding: 3rem 0 3rem 5%;
+  padding: 6rem 0 0 5%;
   width: 27%; }
+  .widget-area h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2f1339; }
+  .widget-area i {
+    line-height: 1.8rem;
+    width: 20px;
+    margin-right: .5rem; }
+  .widget-area .day-of-week {
+    font-weight: 700; }
 
 .widget-area ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.widget-area i {
+.fa {
   display: inline-block;
   margin-right: 0.5rem; }
 
@@ -712,7 +724,8 @@ a {
   letter-spacing: 2px; }
 
 .home .black-button {
-  border: none;
+  color: #2f1339;
+  border: 1px solid #2f1339;
   font-family: 'Novecento Web', sans-serif;
   font-size: .9rem;
   padding: .75rem 1.5rem;
@@ -747,6 +760,15 @@ a {
 .blog .entry-header {
   position: relative; }
 
+.blog .black-button {
+  color: #2f1339;
+  border: 1px solid #2f1339;
+  font-family: 'Novecento Web', sans-serif;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 .blog .entry-title {
   position: absolute;
   top: 0;
@@ -764,7 +786,8 @@ a {
   bottom: 0;
   right: 0;
   background-color: #248A83;
-  color: #fff; }
+  color: #fff;
+  padding: 0 1.5rem; }
 
 .blog .sticky {
   display: block; }
@@ -871,7 +894,8 @@ img {
     .all-products .shop-product .product-info {
       padding: 0.75rem; }
       .all-products .shop-product .product-info .product-title {
-        display: inline; }
+        display: inline;
+        content: '.......................'; }
       .all-products .shop-product .product-info .product-price {
         display: inline; }
 
@@ -903,19 +927,18 @@ img {
     font-size: 1.1rem;
     line-height: 1.75rem; }
   .products-template-default .product-info .black-button {
-    border: none;
+    color: #2f1339;
+    border: 1px solid #2f1339;
     font-family: 'Novecento Web', sans-serif;
     font-size: .9rem;
     padding: .75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     background: #fff;
-    color: #2f1339;
-    border: 1px solid #2f1339;
     border-radius: 0; }
-  .products-template-default .product-info .black-button:hover {
-    background: #248a83;
-    color: #fff; }
+    .products-template-default .product-info .black-button :hover {
+      background: #248a83;
+      color: #fff; }
 
 /* About */
 .page-template .entry-header {
@@ -952,7 +975,8 @@ img {
 
 /* Find Us */
 .page-template-default .entry-title {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 2rem; }
 
 .page-template-default .entry-content p {
   margin: 0; }
@@ -970,8 +994,8 @@ img {
 .page-template-default .content-area {
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
-  padding: 5% 5% 0 0;
+  width: 73%;
+  padding: 6rem 5% 0 0;
   border-right: 1px solid #e1e1e1;
   margin: 0; }
 
@@ -1068,6 +1092,8 @@ object {
 
 /* Header */
 .main-navigation {
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Novecento Web', sans-serif;
   text-transform: uppercase; }
   .main-navigation li {
@@ -1098,6 +1124,18 @@ object {
   width: 50px;
   overflow: hidden;
   text-indent: 100%; }
+
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0; }
+  fieldset .search-field {
+    width: 0;
+    border: none; }
+  fieldset .search-submit {
+    background: #fff;
+    color: #248A83;
+    border: none; }
 
 /* Footer */
 .site-footer {
