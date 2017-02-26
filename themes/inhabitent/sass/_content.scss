@@ -100,14 +100,10 @@
 			color: #2f1339;
 			border: 1px solid #2f1339;
 			border-radius: 0;
-		}
-		.black-button:hover {
+		&:hover {
 			background: #248a83;
 			color: #fff;
 		}
-
-		.news-feed {
-
 		}
 		}
 /* Posts and pages */
@@ -361,17 +357,17 @@
 
 /* Find Us */
 .page-template-default {
-	.entry-title {
-		margin-top: 0;
-		margin-bottom: 2rem;
+	.content-area {
+		padding-bottom: 3rem;
 	}
 	.entry-content {
-		p {
-			margin: 0;
-		}
 		iframe {
 			width: 760px;
 		}
+		h2 {
+			line-height: 1.25;
+			font-size: 2.1rem;
+	}
 	}
 	.container {
 		display: flex;
@@ -384,20 +380,35 @@
 	.content-area {
 			display: flex;
 			width: 73%;
-			padding: 6rem 5% 0 0;
+			padding: 6rem 5% 6rem 0;
 			border-right: 1px solid #e1e1e1;
 			margin: 0;
 		}
 
-	label {
+	.label-spacing {
+		display: block;
 		font-family: 'Novecento Web', sans-serif;
 		text-transform: uppercase;
-		margin-bottom: .8rem;
+		margin-bottom: .5rem;
 		color: #2f1339;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 
 	.required {
 		color: #d99054;
 	}
+	.wpcf7-form-control {
+		background: #e1e1e1;
+		padding: .3rem;
+		border-radius: 0;
+	}
+	.wpcf7-submit {
+		@include button;
+		background: $color__link;
+		color: #fff;
+		border: none;
+	&:hover {
+	background: #19625d
+	}
+}
 }

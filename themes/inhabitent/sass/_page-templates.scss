@@ -15,6 +15,7 @@
     text-transform: uppercase;
     li {
         padding-left: 2rem;
+        font-size: 1.1rem;
     }
 }
 .site-header {
@@ -40,6 +41,9 @@
     overflow: hidden;
     text-indent: 100%;
 }
+.header-search {
+        line-height: 1;
+        padding-left: 1.5rem;
 fieldset {
     margin: 0;
     border: none;
@@ -52,6 +56,10 @@ fieldset {
         background: #fff;
         color: $color__link;
         border: none;
+            }
+    .search-width {
+        width: 180px;
+    }
     }
 }
 
