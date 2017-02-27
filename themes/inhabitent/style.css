@@ -354,7 +354,7 @@ body {
   font-size: 1rem;
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  line-height: 1.75rem;
+  line-height: 1.75;
   font-family: 'Merriweather Web', sans-serif; }
 
 blockquote, q {
@@ -660,7 +660,7 @@ a {
       flex-direction: column; }
 
 .home .product-info {
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.75rem;
   -ms-flex-direction: column;
       flex-direction: column; }
 
@@ -677,7 +677,10 @@ a {
   border: 1px solid #e1e1e1;
   text-align: center;
   padding: .75rem;
-  border-top-width: 5px; }
+  border-top-width: 5px;
+  padding-bottom: 1.5rem; }
+  .home .product-type-wrapper:hover {
+    border-color: #d99054; }
   .home .product-type-wrapper p {
     font-size: 1.1rem;
     line-height: 1.5rem; }
@@ -685,8 +688,22 @@ a {
     width: 70px;
     height: 70px; }
 
+.home .category-link {
+  color: #2f1339;
+  border: 1px solid #2f1339;
+  font-family: 'Novecento Web', sans-serif;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #248a83;
+  color: #fff;
+  border: none; }
+  .home .category-link:hover {
+    background: #19625d; }
+
 .home .new-posts {
-  margin-bottom: 4.5rem; }
+  margin-bottom: 3.75rem; }
   .home .new-posts ul {
     display: -ms-flexbox;
     display: flex;
@@ -720,7 +737,8 @@ a {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 3.75rem;
+  margin-top: 2rem; }
 
 .home h3 {
   font-size: 1.5rem;
@@ -837,6 +855,9 @@ a {
   display: block; }
 
 /* Shop */
+.archive .page-header {
+  text-align: center; }
+
 .archive .site-content {
   padding-top: 3rem;
   padding-bottom: 3rem; }
