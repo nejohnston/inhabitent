@@ -687,8 +687,293 @@ a {
   margin-right: 0.5rem; }
 
 /*--------------------------------------------------------------
+<<<<<<< HEAD
 # Content
 --------------------------------------------------------------*/
+=======
+		# Content
+		--------------------------------------------------------------*/
+/* Front-page */
+.home .reverse-header {
+  position: absolute;
+  background-color: transparent;
+  border: none; }
+  .home .reverse-header a {
+    color: #fff; }
+    .home .reverse-header a:hover {
+      color: #f0e4d1; }
+  .home .reverse-header h1 {
+    background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px;
+    height: 33px;
+    margin: 0;
+    width: 50px;
+    overflow: hidden;
+    text-indent: 100%; }
+  .home .reverse-header label {
+    color: #f0e4d1; }
+    .home .reverse-header label input::-webkit-input-placeholder {
+      color: #f0e4d1; }
+    .home .reverse-header label input::-moz-placeholder {
+      color: #f0e4d1; }
+    .home .reverse-header label input:-ms-input-placeholder {
+      color: #f0e4d1; }
+    .home .reverse-header label input::placeholder {
+      color: #f0e4d1; }
+  .home .reverse-header .search-field {
+    background: transparent;
+    color: #fff;
+    font-size: 1.25rem; }
+
+.home .home-hero {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 3.75rem; }
+
+.home .home-hero-logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.home .information-wrapper {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.home .product-info {
+  margin-bottom: 3.75rem;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.home .shop-stuff-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.home .product-type-wrapper {
+  -ms-flex: 0 1 23.5%;
+      flex: 0 1 23.5%;
+  width: 23.5%;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  padding: .75rem;
+  border-top-width: 5px;
+  padding-bottom: 1.5rem; }
+  .home .product-type-wrapper:hover {
+    border-color: #d99054; }
+  .home .product-type-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.5rem; }
+  .home .product-type-wrapper img {
+    width: 70px;
+    height: 70px; }
+
+.home .category-link {
+  color: #2f1339;
+  border: 1px solid #2f1339;
+  font-family: 'Novecento Web', sans-serif;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #248a83;
+  color: #fff;
+  border: none; }
+  .home .category-link:hover {
+    outline-width: 0; }
+  .home .category-link:hover {
+    background: #19625d; }
+
+.home .new-posts {
+  margin-bottom: 3.75rem;
+  max-width: none; }
+  .home .new-posts ul {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: none;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0; }
+  .home .new-posts .new-posts-wrapper {
+    object-fit: contain;
+    list-style: none;
+    width: 60%;
+    margin: 0;
+    -ms-flex: 0 1 33%;
+        flex: 0 1 33%;
+    max-width: none;
+    overflow: hidden; }
+    .home .new-posts .new-posts-wrapper img {
+      max-height: 250px;
+      width: 100%; }
+  .home .new-posts .post-info-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 0.75rem;
+    padding-top: 0rem;
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid #e1e1e1; }
+
+.home h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3.75rem;
+  margin-top: 2rem; }
+
+.home h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2.3rem;
+  margin-top: 0;
+  line-height: 1.25rem;
+  letter-spacing: 2px; }
+
+.home .black-button {
+  color: #2f1339;
+  border: 1px solid #2f1339;
+  font-family: 'Novecento Web', sans-serif;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #fff;
+  color: #2f1339;
+  border: 1px solid #2f1339;
+  border-radius: 0; }
+  .home .black-button:hover {
+    outline-width: 0; }
+  .home .black-button:hover {
+    background: #248a83;
+    color: #fff; }
+
+.home .adventures {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 4rem; }
+  .home .adventures ul {
+    height: 540px;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .home .adventures li {
+    float: left;
+    overflow: hidden; }
+  .home .adventures h3 {
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: "Merriweather Web", sans-serif; }
+  .home .adventures a {
+    color: #fff; }
+    .home .adventures a:hover {
+      color: #d99054; }
+  .home .adventures a.black-button {
+    color: #2f1339;
+    border: 1px solid #2f1339;
+    font-family: 'Novecento Web', sans-serif;
+    font-size: .9rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0; }
+    .home .adventures a.black-button:hover {
+      outline-width: 0; }
+    .home .adventures a.black-button:hover {
+      background: #248a83;
+      color: #fff;
+      border: none; }
+
+.home li:nth-child(1) {
+  float: left; }
+  .home li:nth-child(1) .adventure-wrapper {
+    position: relative; }
+  .home li:nth-child(1) .attachment-post-thumbnail {
+    object-fit: cover;
+    width: 558px;
+    height: 540px;
+    margin-right: .75rem;
+    float: left; }
+  .home li:nth-child(1) .adventure-info {
+    position: absolute;
+    padding: 1.5rem; }
+    .home li:nth-child(1) .adventure-info h3 {
+      font-size: 3rem;
+      margin-top: 2rem; }
+
+.home li:nth-child(2) {
+  float: right;
+  max-height: 46%;
+  margin-bottom: 1%; }
+  .home li:nth-child(2) .adventure-wrapper {
+    position: relative; }
+  .home li:nth-child(2) img {
+    margin-bottom: 1%;
+    float: right;
+    width: 550px;
+    position: relative; }
+  .home li:nth-child(2) .adventure-info {
+    position: absolute;
+    float: right;
+    padding: 1.5rem; }
+    .home li:nth-child(2) .adventure-info h3 {
+      font-size: 2.4rem; }
+
+.home li:nth-child(3) {
+  float: left; }
+  .home li:nth-child(3) .adventure-wrapper {
+    position: relative; }
+  .home li:nth-child(3) .attachment-post-thumbnail {
+    object-fit: cover;
+    width: 270px;
+    height: 280px;
+    margin-bottom: 1%;
+    float: right; }
+  .home li:nth-child(3) .adventure-info {
+    padding: 1.5rem;
+    position: absolute; }
+    .home li:nth-child(3) .adventure-info h3 {
+      font-size: 1.6rem; }
+
+.home li:nth-child(4) {
+  float: right; }
+  .home li:nth-child(4) .adventure-wrapper {
+    position: relative; }
+  .home li:nth-child(4) .attachment-post-thumbnail {
+    object-fit: cover;
+    width: 270px;
+    height: 280px;
+    margin-bottom: 1%;
+    float: right; }
+  .home li:nth-child(4) .adventure-info {
+    padding: 1.5rem;
+    position: absolute; }
+    .home li:nth-child(4) .adventure-info h3 {
+      font-size: 1.6rem; }
+
+>>>>>>> parent of 3325d78... Finished dynamic adventures page
 /* Posts and pages */
 .blog .site-content {
   padding-top: 3rem; }
@@ -1218,53 +1503,16 @@ img {
       flex-direction: column; }
 
 /* Single Adventure Page */
-.adventure_post_type-template-default .reverse-header {
-  position: absolute;
-  background-color: transparent;
-  border: none; }
-  .adventure_post_type-template-default .reverse-header a {
-    color: #fff; }
-    .adventure_post_type-template-default .reverse-header a:hover {
-      color: #f0e4d1; }
-  .adventure_post_type-template-default .reverse-header h1 {
-    background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
-    background-size: 50px 33px;
-    height: 33px;
-    margin: 0;
-    width: 50px;
-    overflow: hidden;
-    text-indent: 100%; }
-  .adventure_post_type-template-default .reverse-header label {
-    color: #f0e4d1; }
-    .adventure_post_type-template-default .reverse-header label input::-webkit-input-placeholder {
-      color: #f0e4d1; }
-    .adventure_post_type-template-default .reverse-header label input::-moz-placeholder {
-      color: #f0e4d1; }
-    .adventure_post_type-template-default .reverse-header label input:-ms-input-placeholder {
-      color: #f0e4d1; }
-    .adventure_post_type-template-default .reverse-header label input::placeholder {
-      color: #f0e4d1; }
-  .adventure_post_type-template-default .reverse-header .search-field {
-    background: transparent;
-    color: #fff;
-    font-size: 1.25rem; }
-
 .adventure_post_type-template-default section {
   margin-left: 0;
   margin-right: 0;
   max-width: none; }
 
-.adventure_post_type-template-default .adventures-single-hero {
-  margin: 0; }
-  .adventure_post_type-template-default .adventures-single-hero img {
-    height: 100vh;
-    width: 100vw;
-    max-width: none; }
-
-.adventure_post_type-template-default .adventure-post {
+.adventure_post_type-template-default .adventure-posts {
   margin-left: 0;
   margin-right: 0;
   max-width: none; }
+<<<<<<< HEAD
 
 .adventure_post_type-template-default .entry-title {
   width: 1120px;
@@ -1360,6 +1608,12 @@ img {
     top: 0;
     left: 0;
     margin: 4.5rem 1.5rem; }
+=======
+  .adventure_post_type-template-default .adventure-posts .entry-header {
+    max-width: none; }
+    .adventure_post_type-template-default .adventure-posts .entry-header img {
+      width: 100vh; }
+>>>>>>> parent of 3325d78... Finished dynamic adventures page
 
 /*--------------------------------------------------------------
 # Media

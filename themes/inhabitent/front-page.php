@@ -90,18 +90,16 @@
 				<div class="adventure-wrapper">
 				<?php the_post_thumbnail(); ?>
 				<div class="adventure-info">
-				<h3><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<a href="<?php echo the_permalink(); ?>" type="button" class="black-button">Read More</a>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<a href="<?php the_permalink(); ?>" type="button" class="black-button">Read More</a>
 				</div>
 				</div>
 >>>>>>> parent of 91f8931... Adding linear gradient to adventures
 				</li>
 				<?php endwhile; ?>
 				</ul>
-				<div class="more-adventures">
-                <button class= "black-button">
-                    <a href="<?php echo get_post_type_archive_link( 'adventure_post_type' ); ?>">More Adventures</a>
-                </button>
-				</div>
+                    <p class = "more-adventures">
+                    <a href="">More Adventures</a>
+                </p>
             </section>
 	<?php get_footer(); ?>

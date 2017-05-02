@@ -1,6 +1,68 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+		/*--------------------------------------------------------------
+		# Content
+		--------------------------------------------------------------*/
+	/* Front-page */
+
+.home {
+		.reverse-header {
+						@include reverse-header;
+				}
+			.home-hero {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 3.75rem;
+			}
+			.home-hero-logo {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+			}
+			.information-wrapper {
+				flex-direction: column;
+			}
+			.product-info {
+				margin-bottom: 3.75rem;
+				flex-direction: column;
+			}
+			.shop-stuff-container {
+				display: flex;
+				justify-content: space-between;
+			}
+			.product-type-wrapper {
+				flex: 0 1 23.5%;
+				width: 23.5%;
+				border: 1px solid #e1e1e1;
+				text-align: center;
+				padding: .75rem;
+				border-top-width: 5px;
+				padding-bottom: 1.5rem;
+					&:hover {
+						border-color: $color__orange;
+						}
+					p {
+						font-size: 1.1rem;
+						line-height: 1.5rem;
+					}
+					img {
+						width: 70px;
+						height: 70px;
+					}
+		}
+
+			.category-link {
+				@include button;
+				background: #248a83;
+				color: #fff;
+				border: none;
+				&:hover {
+					background: #19625d;
+				}
+			}
+>>>>>>> parent of 3325d78... Finished dynamic adventures page
 
 /* Posts and pages */
 
@@ -31,12 +93,10 @@
 .black-button {
 	@include button;
 
-<<<<<<< HEAD
 	&:hover {
 		background: $color__link;
 		color: #fff;
 	}
-=======
 		}
 			h2 {
 				font-size: 2.4rem;
@@ -801,3 +861,20 @@ margin: 4.5rem 1.5rem;
 }
 }
 }
+	section {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: none;
+	}
+	.adventure-posts {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: none;
+		.entry-header {
+			max-width: none;
+			img {
+				width: 100vh;
+			}
+		}
+	}
+	}
