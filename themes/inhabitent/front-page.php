@@ -54,9 +54,7 @@
 									<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 								</div>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<button type="button" class="black-button">
-									Read Entry
-								</button>
+									<a href="<?php the_permalink()?>" class ="black-button">Read Entry</a>
 							</div>
 						</div>
 						<?php endforeach;

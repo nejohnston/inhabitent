@@ -108,13 +108,13 @@
         line-height: 1.25rem;
         letter-spacing: 2px;
     }
-.black-button {
+.black-button a {
     @include button;
     background: #fff;
     color: #2f1339;
     border: 1px solid #2f1339;
     border-radius: 0;
-&:hover {
+&:hover a {
     background: #248a83;
     color: #fff;
 }
