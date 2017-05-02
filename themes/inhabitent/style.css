@@ -1917,7 +1917,7 @@ a.footer-link {
     margin-top: 0;
     line-height: 1.25rem;
     letter-spacing: 2px; }
-  .home .black-button a {
+  .home a.black-button {
     color: #2f1339;
     border: 1px solid #2f1339;
     font-family: 'Novecento Web', sans-serif;
@@ -1929,9 +1929,9 @@ a.footer-link {
     color: #2f1339;
     border: 1px solid #2f1339;
     border-radius: 0; }
-    .home .black-button a:hover {
+    .home a.black-button:hover {
       outline-width: 0; }
-    .home .black-button a:hover a {
+    .home a.black-button:hover a {
       background: #248a83;
       color: #fff; }
   .home .adventures {

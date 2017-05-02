@@ -52,7 +52,7 @@
 									<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 								</div>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-									<a href="<?php the_permalink()?>" class ="black-button">Read Entry</a>
+									<a class="black-button" href="<?php the_permalink()?>">Read Entry</a>
 							</div>
 						</div>
 						<?php endforeach;

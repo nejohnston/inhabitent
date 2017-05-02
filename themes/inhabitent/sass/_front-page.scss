@@ -108,7 +108,7 @@
         line-height: 1.25rem;
         letter-spacing: 2px;
     }
-.black-button a {
+a.black-button {
     @include button;
     background: #fff;
     color: #2f1339;
