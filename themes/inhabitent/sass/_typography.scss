@@ -66,3 +66,61 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+/* Front page Adventure typography classes */
+
+.home .adventureImages{
+    .longImageText{
+        font-family: 'Merriweather Web', 'sans-serif';
+        font-size:3rem;
+        color:white;
+    }
+    .wideImageText{
+        font-family: 'Merriweather Web', 'sans-serif';
+        font-size:2.4rem;
+        color:white;
+    }
+    .squareImageText{
+        font-family: 'Merriweather Web', 'sans-serif';
+        font-size:1.5rem;
+        color:white;
+    }
+    .squareImageContent{
+        padding:1.5rem;
+    }
+    .longImageContent{
+        padding-left:1.5rem;
+    }
+    .wideImageContent{
+        padding-left:1.5rem;
+    }
+    a {
+        border:solid 1px white;
+        color:white;
+        padding:.5rem 1.5rem;
+        text-decoration:none;
+        text-transform: uppercase;
+        font-size:.9rem;
+        font-family:'Novecento Sans Web','sans-serif';
+        &:hover{
+            background:#248a8b;
+            border:solid 1px #248a8b;
+        }
+    }
+
+}
+.home .moreAdventures {
+    margin-top:2rem;
+	margin-left: 9.5rem;
+    a{
+    	padding:.75rem 1.5rem;
+        color:white;
+        background:#248a8b;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-family:'Novecento Sans Web','sans-serif';
+        &:hover{
+            background:#1b6661;
+        }
+    }
+}

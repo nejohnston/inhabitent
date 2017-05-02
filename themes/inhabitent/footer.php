@@ -14,6 +14,7 @@
 					<h3 class="footer-header">Contact Info</h3>
 					<p><i class="fa fa-envelope"></i><a class="footer-link" href="mailto: info@inhabitent.com">info@inhabitent.com</a></p>
 					<p><i class="fa fa-phone"></i><a class="footer-link" href="tel:1432412341234">604-456-7891</a></p>
+					<p><i class="fa fa-twitter"></i><i class="fa fa-facebook"></i><i class="fa fa-pinterest"></i>
 					</div>
 					<div class="footer-block-item">
 					<h3 class="footer-header">Business Hours</h3>
@@ -27,6 +28,9 @@
 					</div>
 					</div>
 			</div><!-- .site-info -->
+			<div class="copyright">
+				<p>Copyright &#169 2016 Inhabitent</p>
+			</div>
 		</footer><!-- #colophon -->
 
 	<?php wp_footer(); ?>

@@ -1,32 +1,39 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The main template file.
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
-
+<section class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="adventure-posts">
+		<?php if ( have_posts() ) : ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php if ( is_home() && ! is_front_page() ) : ?>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+			<?php endif; ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php the_post_navigation(); ?>
+				<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+			<?php endwhile; ?>
 
-		<?php endwhile; // End of the loop. ?>
+			<?php the_posts_navigation(); ?>
 
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
+</section>
+
 <?php get_footer(); ?>

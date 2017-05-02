@@ -35,7 +35,6 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
 	color: #666;
 	border: 1px solid #ccc;
@@ -49,8 +48,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type="password"], {
 	padding: 3px;
 }
 

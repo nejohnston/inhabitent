@@ -60,3 +60,61 @@ function inhabitent_cpt_product() {
 
 }
 add_action( 'init', 'inhabitent_cpt_product', 0 );
+
+// Register Custom Adventure Post Type
+function adventure_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Adventures', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Adventure', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Adventures', 'text_domain' ),
+		'name_admin_bar'        => __( 'Adventures', 'text_domain' ),
+		'archives'              => __( 'Adventure Archives', 'text_domain' ),
+		'attributes'            => __( 'Item Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Adventure:', 'text_domain' ),
+		'all_items'             => __( 'Adventure Items', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Adventure Item', 'text_domain' ),
+		'add_new'               => __( 'Add New Adventure', 'text_domain' ),
+		'new_item'              => __( 'New Adventure Item', 'text_domain' ),
+		'edit_item'             => __( 'Edit Adventure Item', 'text_domain' ),
+		'update_item'           => __( 'Update Adventure Item', 'text_domain' ),
+		'view_item'             => __( 'View Adventure Item', 'text_domain' ),
+		'view_items'            => __( 'View Adventure Items', 'text_domain' ),
+		'search_items'          => __( 'Search Adventure Item', 'text_domain' ),
+		'not_found'             => __( 'Adventure Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Adventure Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Adventure Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured Adventure image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured Adventure image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured Adventure image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Adventure item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Adventure item', 'text_domain' ),
+		'items_list'            => __( 'Items Adventure list', 'text_domain' ),
+		'items_list_navigation' => __( 'Adventure items list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Adventures items list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Adventure', 'text_domain' ),
+		'description'           => __( 'Adventure posts with Images', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-star-half',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+		'rest_base'				=> 'adventures',
+	);
+	register_post_type( 'adventure_post_type', $args );
+
+}
+add_action( 'init', 'adventure_post_type', 0 );

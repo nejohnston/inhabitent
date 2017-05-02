@@ -5,7 +5,8 @@
  * @package RED_Starter_Theme
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -19,7 +20,7 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header reverse-header" role="banner">
 				<div class="container">
 				<div class="site-branding">
 					<div class="logo">
@@ -38,6 +39,7 @@
 				</nav><!-- #site-navigation -->
 				</div>
 				</div>
+				</div>
 			</header><!-- #masthead -->
-
+</div>
 			<div id="content" class="site-content">

@@ -5,10 +5,11 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1120px;
+    max-width: 1120px;
 }
 
 /* Header */
+
 .main-navigation {
     display: flex;
     font-family: 'Novecento Web', sans-serif;
@@ -30,8 +31,7 @@
         align-items: center;
         justify-content: space-between;
     }
-}
-.site-header h1 {
+  h1 {
     display: flex;
     background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px 33px;
@@ -40,26 +40,36 @@
     width: 50px;
     overflow: hidden;
     text-indent: 100%;
+    }
 }
+
+
 .header-search {
         line-height: 1;
         padding-left: 1.5rem;
-fieldset {
+form {
+    display: block;
+
+    fieldset {
+    border: 0;
     margin: 0;
-    border: none;
     padding: 0;
+    }
+}
     .search-field {
-        width: 0;
+        font-family: 'Novecento Web', sans-serif;
         border: none;
+        display: none;
     }
     .search-submit {
-        background: #fff;
         color: $color__link;
         border: none;
+        padding-top: .33rem;
+        float: left;
             }
     .search-width {
-        width: 180px;
-    }
+        display: block;
+        background: transparent;
     }
 }
 
@@ -91,6 +101,14 @@ fieldset {
 }
 .footer-header {
     color: #d99054;
+}
+.copyright {
+    font-family: 'Novecento Web', sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: .75rem;
+    font-size: 1rem;
 }
 
 a.footer-link {
