@@ -34,7 +34,6 @@
 		<section class="new-posts">
 				<h2>Inhabitent Journal</h2>
 				<div class="new-posts-wrapper">
-					<ul>
 						<?php
 						global $post;
 						$args = array(
@@ -46,7 +45,7 @@
 						);
 						$inhabitent_blog_posts = get_posts( $args );
 						foreach( $inhabitent_blog_posts as $post ) :?>
-						<li class="post-wrapper">
+						<div class="post-wrapper">
 							<div class="thumbnail-wrapper">
 								<?php the_post_thumbnail('large'); ?>
 							</div>
@@ -59,10 +58,9 @@
 									Read Entry
 								</button>
 							</div>
-						</li>
+						</div>
 						<?php endforeach;
 						wp_reset_postdata(); ?>
-					</ul>
 				</div>
 				</section>
 				<section class = "adventures container">
@@ -77,7 +75,6 @@
 					?>
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<li>
-<<<<<<< HEAD
 					<div class="adventure-wrapper">
 						<?php the_post_thumbnail(); ?>
 						<div class="adventures-gradient"></div>
@@ -86,15 +83,6 @@
 								<a href="<?php echo the_permalink(); ?>" type="button" class="black-button">Read More</a>
 							</div>
 						</div>
-=======
-				<div class="adventure-wrapper">
-				<?php the_post_thumbnail(); ?>
-				<div class="adventure-info">
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<a href="<?php the_permalink(); ?>" type="button" class="black-button">Read More</a>
-				</div>
-				</div>
->>>>>>> parent of 91f8931... Adding linear gradient to adventures
 				</li>
 				<?php endwhile; ?>
 				</ul>
@@ -102,4 +90,5 @@
                     <a href="">More Adventures</a>
                 </p>
             </section>
+			</div>
 	<?php get_footer(); ?>
