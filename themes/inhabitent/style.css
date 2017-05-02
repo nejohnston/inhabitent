@@ -1344,6 +1344,13 @@ img {
 
 .post-template-default .site-content {
   padding-top: 3rem; }
+  .post-template-default .site-content .entry-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .post-template-default .site-content .comments-link a {
+    color: #fff; }
 
 .post-template-default .container {
   display: -ms-flexbox;
@@ -1885,6 +1892,8 @@ a.footer-link {
       margin: 0;
       -ms-flex: 0 1 33%;
           flex: 0 1 33%;
+      -ms-flex-direction: row;
+          flex-direction: row;
       max-width: none;
       overflow: hidden; }
       .home .new-posts .post-wrapper img {
@@ -1908,7 +1917,7 @@ a.footer-link {
     margin-top: 0;
     line-height: 1.25rem;
     letter-spacing: 2px; }
-  .home .black-button {
+  .home .black-button a {
     color: #2f1339;
     border: 1px solid #2f1339;
     font-family: 'Novecento Web', sans-serif;
@@ -1920,9 +1929,9 @@ a.footer-link {
     color: #2f1339;
     border: 1px solid #2f1339;
     border-radius: 0; }
-    .home .black-button:hover {
+    .home .black-button a:hover {
       outline-width: 0; }
-    .home .black-button:hover {
+    .home .black-button a:hover a {
       background: #248a83;
       color: #fff; }
   .home .adventures {

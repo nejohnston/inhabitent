@@ -14,11 +14,9 @@
 					'taxonomy' => 'product-type',
 					'order' => 'ASC',
 					'hide_empty' => false,
-					) );
-
+					));
 					foreach ($terms as $term) :
 					$url = get_term_link ($term->slug , 'product-type');
-
 		?>
 
 		<div class="product-type-wrapper">

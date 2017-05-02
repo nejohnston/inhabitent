@@ -645,15 +645,19 @@ h2 {
 	display: flex;
 	}
 }
-
-
 .site-content {
 	padding-top: 3rem;
+		.entry-footer {
+			display: flex;
+			flex-direction: column;
+		}
+		.comments-link a {
+		color: #fff;
+		}
 	}
 	.container {
 		display: flex;
 	}
-
 .content-area {
 	display: flex;
 	width: 73%;
