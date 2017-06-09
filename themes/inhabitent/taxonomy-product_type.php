@@ -56,7 +56,7 @@ get_header(); ?>
             <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
             <?php endif; ?>
-                </section>
+        </section>
         </main><!-- #main -->
     </div><!-- #primary -->
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
