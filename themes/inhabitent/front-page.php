@@ -75,8 +75,8 @@
 						<?php the_post_thumbnail(); ?>
 						<div class="adventures-gradient"></div>
 							<div class="adventure-info">
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<a href="<?php the_permalink(); ?>" type="button" class="black-button">Read More</a>
+								<h3><a href="adventures/<?php echo the_title(); ?>"><?php the_title(); ?></a></h3>
+								<a href="<?php the_permalink(''); ?>" type="button" class="black-button">Read More</a>
 							</div>
 						</div>
 				</li>
