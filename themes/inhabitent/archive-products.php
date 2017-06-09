@@ -42,7 +42,6 @@
                 </ul>
                         </section>
                             <div class="all-products">
-                            <?php /* Start the Loop */ ?>
                             <?php while ( have_posts() ) : the_post(); ?>
                                 <div class="shop-product">
 

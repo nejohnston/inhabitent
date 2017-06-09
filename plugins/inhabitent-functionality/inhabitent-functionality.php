@@ -1,8 +1,8 @@
 <?php
  /**
  *
- * @package   [SITE NAME] Functionality
- * @author    Your Name <your_email@email.com>
+ * @package   Inhabitent Functionality
+ * @author    Nicholas Johnston <n.e.johnston@hotmail.com>
  * @license   GPL-2.0+
  * @copyright 2015 RED Academy
  *

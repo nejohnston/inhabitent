@@ -10,7 +10,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
         <?php if ( have_posts() ) : ?>
-            <header class="page-header">
+            <section class="page-header">
                             <?php
                                 function adventures_archive_title($title) {
                                     if(is_post_type_archive('adventures')) {
@@ -22,8 +22,7 @@ get_header(); ?>
                                     the_archive_title( '<h1 class="page-title">', '</h1>' );
                                     the_archive_description( '<div class="taxonomy-description">', '</div>' );
                             ?>
-            </header><!-- .page-header -->
-            <?php /* Start the Loop */ ?>
+            </section><!-- .page-header -->
             <section class="container">
                 <ul>
                 <?php while ( have_posts() ) : the_post(); ?>
